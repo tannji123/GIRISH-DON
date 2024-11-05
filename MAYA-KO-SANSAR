@@ -1,11 +1,9 @@
 import discord
 from discord.ext import commands
 
-# आफ्नो बोटको टोकन यहाँ राख्नुहोस्
-TOKEN = 'yMTMwMjk5NDQ0ODUwNjE1OTE0NQ.GQDsaU.OJAk9vG45-_2jaI4_v962a6G29cAPNVrmpIYds'
 
 bot = commands.Bot(command_prefix='!')
-
+TOKEN = 'MTMwMjk5NDQ0ODUwNjE1OTE0NQ.GouV8T.1HNuFIl7xLiD5R-EDwxYtG6ZBcn369U1E5s9dI'
 @bot.event
 async def on_ready():
     print(f'Bot logged in as {bot.user}')
@@ -37,30 +35,5 @@ async def weather(ctx, *, city):
     await ctx.send(f"{city} को मौसम हाल: घाम लागिरहेको छ!")
 
 
-bot.run(TOKEN)
-MTMwMjk5NDQ0ODUwNjE1OTE0NQ.GQDsaU.OJAk9vG45-_2jaI4_v962a6G29cAPNVrmpIYds
+bot.run(MTMwMjk5NDQ0ODUwNjE1OTE0NQ.GouV8T.1HNuFIl7xLiD5R-EDwxYtG6ZBcn369U1E5s9dI)
 
-import os
-import discord
-from discord.ext import commands
-
-TOKEN = os.getenv('DISCORD_TOKEN')
-
-bot = commands.Bot(command_prefix='!')
-
-@bot.event
-async def on_ready():
-    print(f'Bot logged in as {bot.user}')
-
-# Your other commands go here...
-
-bot.run(TOKEN)
-MTMwMjk5NDQ0ODUwNjE1OTE0NQ.GQDsaU.OJAk9vG45-_2jaI4_v962a6G29cAPNVrmpIYds
-
-git filter-branch --force --index-filter \
-  'git rm --cached --ignore-unmatch path/to/your_file.py' \
-  --prune-empty --tag-name-filter cat -- --all
-git push origin --force --all
-*.pyc
-__pycache__/
-.env
