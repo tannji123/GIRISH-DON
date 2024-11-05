@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 
 # आफ्नो बोटको टोकन यहाँ राख्नुहोस्
-TOKEN = 'your_token_here'
+TOKEN = 'yMTMwMjk5NDQ0ODUwNjE1OTE0NQ.GQDsaU.OJAk9vG45-_2jaI4_v962a6G29cAPNVrmpIYds'
 
 bot = commands.Bot(command_prefix='!')
 
