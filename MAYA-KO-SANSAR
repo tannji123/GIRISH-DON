@@ -8,17 +8,16 @@ TOKEN = 'MTMwMjk5NDQ0ODUwNjE1OTE0NQ.GouV8T.1HNuFIl7xLiD5R-EDwxYtG6ZBcn369U1E5s9d
 async def on_ready():
     print(f'Bot logged in as {bot.user}')
 
-# नमस्ते कमाण्ड
+
 @bot.command(name="namaste")
 async def namaste(ctx):
     await ctx.send("नमस्ते! म यहाँ मद्दत गर्नको लागि छु।")
 
-# echo कमाण्ड जसले प्रयोगकर्ताले भनेको दोहोर्याउँछ
+
 @bot.command(name="echo")
 async def echo(ctx, *, message):
     await ctx.send(f'तपाईंले भनेको: {message}')
 
-# नेपाली जोक बताउने कमाण्ड
 @bot.command(name="joke")
 async def joke(ctx):
     jokes = [
@@ -29,10 +28,10 @@ async def joke(ctx):
     import random
     await ctx.send(random.choice(jokes))
 
-# मौसम बताउने (सामान्य उदाहरण)
+
 @bot.command(name="weather")
-async def weather(ctx, *, city):
-    await ctx.send(f"{city} को मौसम हाल: घाम लागिरहेको छ!")
+async def weather(ctx, *, city):bhaktapur,nepal):
+    await ctx.send(f"{bhaktapur} को मौसम हाल: घाम लागिरहेको छ!")
 
 
 bot.run(MTMwMjk5NDQ0ODUwNjE1OTE0NQ.GouV8T.1HNuFIl7xLiD5R-EDwxYtG6ZBcn369U1E5s9dI)
